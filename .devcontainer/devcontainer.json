@@ -22,13 +22,13 @@
 		"vadimcn.vscode-lldb",
 		// (Optional) Displays the current CPU stats, memory/disk consumption, clock freq. etc. of the container host in the VS Code status bar.
 		// "mutantdino.resourcemonitor"
-	]
+	],
 
 	// Use 'forwardPorts' to make a list of ports inside the container available locally.
 	// "forwardPorts": [],
 
 	// Use 'postCreateCommand' to run commands after the container is created.
-	// "postCreateCommand": "rustc --version",
+	"postCreateCommand": "cargo install --force --path .",
 
 	// Uncomment to connect as a non-root user. See https://aka.ms/vscode-remote/containers/non-root.
 	// "remoteUser": "vscode"

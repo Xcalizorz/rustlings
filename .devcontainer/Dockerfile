@@ -40,8 +40,3 @@ RUN apt-get update \
     && apt-get autoremove -y \
     && apt-get clean -y \
     && rm -rf /var/lib/apt/lists/*
-
-FROM base
-
-# Installing rustlings
-RUN curl -L https://git.io/rustlings | bash
